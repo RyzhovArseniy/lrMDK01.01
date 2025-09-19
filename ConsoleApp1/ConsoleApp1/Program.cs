@@ -27,14 +27,14 @@ namespace ConsoleApp1
             int[] C = new int[10000];
             for (int m = 0; m < C.Length; m++)
             { 
-                C[m] = 1 + m;
+                C[m] = (1 + m) * 2;
             }
             Console.WriteLine("[");
             for (int m = 0; m < C.Length -1; m++)
             {
                 Console.WriteLine(C[m] + ", ");
             }
-            Console.WriteLine(C.Length + "]");
+            Console.WriteLine(C.Length * 2 + "]");
         }
     }
 }
