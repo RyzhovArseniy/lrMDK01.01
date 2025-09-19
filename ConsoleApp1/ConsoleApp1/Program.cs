@@ -23,6 +23,18 @@ namespace ConsoleApp1
             Console.WriteLine(B[0]);
             Console.WriteLine(B[1]);
             Console.WriteLine(B[2]);
+
+            int[] C = new int[10000];
+            for (int m = 0; m < C.Length; m++)
+            { 
+                C[m] = 1 + m;
+            }
+            Console.WriteLine("[");
+            for (int m = 0; m < C.Length -1; m++)
+            {
+                Console.WriteLine(C[m] + ", ");
+            }
+            Console.WriteLine(C.Length + "]");
         }
     }
 }
