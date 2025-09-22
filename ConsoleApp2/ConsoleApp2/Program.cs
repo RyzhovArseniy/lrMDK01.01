@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             List <double> list = new List<double>(); ///создал пустой список без элементов
             Console.WriteLine("Исходный размер списка: " + list.Count);
@@ -22,6 +22,22 @@ namespace ConsoleApp2
             Console.WriteLine("Размер списка после добавления элементов: " + list.Count);
 
 
+           List<string> A = new List<string> { "Собаки", "Кошки", "Крокодилы", "Кролики", "Бегемоты" };
+            Console.WriteLine("Кол-во записей в списке А: " + list.Count); ///Создал список и вывел элементы
+
+
+
+            ///Домашнее задание: добавить возможность вводить дробные числа 
+            List<double> number = new List<double>();
+            Console.Write("Введите дробное число: ");
+            double numbers = Convert.ToDouble(Console.ReadLine());
+            number.Add(numbers);
+            Console.WriteLine($"Число {numbers} добавлено.");
         }
+
+
+
+
     }
+    
 }
